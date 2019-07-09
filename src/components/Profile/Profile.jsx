@@ -1,4 +1,5 @@
 import React from 'react';
+import Posts from './MyPosts/MyPosts';
 
 const Profile = () => {
     return (
@@ -13,17 +14,9 @@ const Profile = () => {
                 avatar + description
             </div>
 
-            <div>
-                myPosysts
-                <div>
-                    new post
-                </div>
+            <Posts/>
 
-                <div>
-                    <div>Post 1</div>
-                    <div>Post 2</div>
-                </div>
-            </div>
+           
         </div>
     )
 }
