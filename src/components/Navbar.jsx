@@ -17,7 +17,8 @@ const Navbar = () => {
                     <a href='rr.html'>Settings</a>
                 </li>
             </ul>
-        </nav>
+        </nav> 
+        // sjdj
     )
 }
 
