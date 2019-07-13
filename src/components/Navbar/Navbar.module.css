@@ -5,8 +5,13 @@
 
 .item a{
     color: #fff;
+    text-decoration: none;
 }
 
-.item.active a{
+.item{
+    margin-bottom: 10px;
+}
+
+.item a.activeLink{
     color: gold;
 }
