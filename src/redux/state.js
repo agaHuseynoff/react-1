@@ -27,7 +27,9 @@ let state = {
                 likesCount: 7,
                 img: 'http://www.avatars24.de/img/avatars/avatar-5.jpg'
             }
-        ]
+        ],
+
+        newPostText: 'agahuseynoff.com'
     },
 
     dialogsPage: {
@@ -77,16 +79,22 @@ let state = {
     }
 }
 
-export let addPost = (postMessage) => {
+export let addPost = () => {
     let newPost = {
         id: 5,
-        message: postMessage,
+        message: state.profilePage.newPostText,
         likesCount: 0,
         img: 'http://www.luljettas.com/images/avatar/img-6.jpg'
     };
 
     state.profilePage.posts.push(newPost);
     rerenderEntireTree(state);
+};
+
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
 }
+
 
 export default state;
